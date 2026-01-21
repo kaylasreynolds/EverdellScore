@@ -50,19 +50,7 @@
 
 <body>
     <header>
-        <img src="img/everdell_logo.png" style="height: 4.8rem; max-width: 100%;"></img>
         <div id="header-right">
-            <button id="dropdownMenu" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false" data-i18n="gen.lang">
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <button class="dropdown-item" type="button" onclick="app.setLanguage('en')">English</button>
-                <button class="dropdown-item" type="button" onclick="app.setLanguage('de')">Deutsch</button>
-                <button class="dropdown-item" type="button" onclick="app.setLanguage('pl')">Polski</button>
-                <button class="dropdown-item" type="button" onclick="app.setLanguage('es')">Español</button>
-                <button class="dropdown-item" type="button" onclick="app.setLanguage('nl')">Nederlands</button>
-                <button class="dropdown-item" type="button" onclick="app.setLanguage('pt')">Brasil português</button>
-            </div>
             <button id="clear" type="button" class="btn btn-danger" onclick="app.btn_reset()"
                 data-i18n="gen.reset"></button>
         </div>
@@ -557,18 +545,7 @@
             </div>
           </div>
     </main>
-    <footer>
-        <div id="developmentlink">
-            <p>If you encounter errors, feel free to visit the <a href="https://github.com/tadeaustria/EverdellScore">development page</a> and post an issue or <a href="mailto:tade_tirol@hotmail.com">send me an email</a>.</p>
-            <p>If you want to help adding your language, find the <a href="i18n/en/translation.json">English template here</a>.</p>
-        </div>
-        <!-- <div id="legal-text">
-        </div> -->
-        <div id="version">
-            <p>v1.6.2</p>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
     <script src="src/app.js"></script>
