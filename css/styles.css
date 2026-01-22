@@ -90,12 +90,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-#header-right {
-  float: right;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
+
 
 header {
   position: fixed;
@@ -108,12 +103,22 @@ header {
   height: 5rem;
   padding: 0.1rem;
 
+display: flex;
+align-items: center;
+justify-content: space-between;
+
   width: 100%;
   max-width: none;          /* IMPORTANT: don't constrain a fixed header */
   background: #fff;         /* prevents content showing through */
 }
 
 /* Reserve space so content doesn't sit underneath the fixed header */
+
+#header-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
 main.container-fluid {
   padding-top: 5rem;        /* match header height */
 }
