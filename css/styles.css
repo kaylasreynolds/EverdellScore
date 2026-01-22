@@ -89,29 +89,25 @@ body {
   max-width: 60rem;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 5rem;
+ 
 }
 
 
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-
-  z-index: 1000;
+  position: static;
   height: 5rem;
   padding: 0.1rem;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   width: 100%;
-  max-width: none;          /* IMPORTANT: don't constrain a fixed header */
-  background: #fff;         /* prevents content showing through */
+  max-width: 60rem;
+  background: transparent;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-/* Reserve space so content doesn't sit underneath the fixed header */
 
 #header-right {
   display: flex;
