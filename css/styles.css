@@ -119,7 +119,7 @@ main.container-fluid {
 }
 
 main {
-  padding-top: 0;
+  padding-top: 1rem;
   min-height: 100%;
   display: flex;
   -webkit-box-flex: 1;
