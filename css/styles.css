@@ -89,6 +89,7 @@ body {
   max-width: 60rem;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 5rem;
 }
 
 
@@ -99,13 +100,11 @@ header {
   right: 0;
 
   z-index: 1000;
-
   height: 5rem;
   padding: 0.1rem;
-
-display: flex;
-align-items: center;
-justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   width: 100%;
   max-width: none;          /* IMPORTANT: don't constrain a fixed header */
@@ -120,12 +119,11 @@ justify-content: space-between;
 }
 
 main.container-fluid {
-  padding-top: 5rem;        /* match header height */
+  padding-top: 0;
 }
 
-
 main {
-  padding-top: 5rem;
+  padding-top: 0;
   min-height: 100%;
   display: flex;
   -webkit-box-flex: 1;
