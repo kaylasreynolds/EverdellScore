@@ -90,26 +90,34 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-
 #header-right {
   float: right;
   display: flex;
   flex-direction: column;
-  align-items: right;
+  align-items: flex-end;
 }
 
 header {
   position: fixed;
-  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 1000;
+
   height: 5rem;
-    padding-top: 1rem;   /* adjust as needed */
-    padding-left: 0.1rem;
-    padding-right: 0.1rem;
-    padding-bottom: 0.1rem;
+  padding: 0.1rem;
+
   width: 100%;
-  max-width: 60rem;
-  vertical-align: middle;
+  max-width: none;          /* IMPORTANT: don't constrain a fixed header */
+  background: #fff;         /* prevents content showing through */
 }
+
+/* Reserve space so content doesn't sit underneath the fixed header */
+main.container-fluid {
+  padding-top: 5rem;        /* match header height */
+}
+
 
 main {
   padding-top: 5rem;
